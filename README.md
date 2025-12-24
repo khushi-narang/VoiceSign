@@ -75,6 +75,4 @@ DATABASE_URL=postgresql+psycopg2://username:password@db-host:5432/dbname
 - Error: "Audio file could not be read as PCM WAV, AIFF/AIFF-C, or Native FLAC" — means the server couldn't read the upload. Install `ffmpeg` and retry, or configure the client to upload WAV/FLAC/AIFF.
 - If conversion fails, check server logs — the code now returns ffmpeg stderr to help debugging.
 
-**Contact / Next steps**
-- To wire a real PostgreSQL instance, set `DATABASE_URL` and restart the app.
-- I can create `requirements.txt` or commit these updates if you'd like.
+
