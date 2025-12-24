@@ -1,0 +1,13 @@
+.env
+voice_sign_bridge.db
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+.env.example
+.vscode/
+.DS_Store
+.idea/
