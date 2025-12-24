@@ -1,4 +1,4 @@
-**VoiceSignBridge — Local Setup & Audio Requirements**
+**VoiceSignBridge Local Setup & Audio Requirements**
 
 - **Project:** VoiceSignBridge (speech → ISL gloss → video)
 - **Location:** `VoiceSignBridge/`
@@ -32,7 +32,7 @@ D:/ISL_app/.venv/Scripts/python.exe d:\ISL_app\VoiceSignBridge\app.py
 - If `ffmpeg` is not installed or conversion fails, the server will return a clear error asking you to install `ffmpeg` or upload a supported format.
 
 Supported formats the server can process (after conversion):
-- WAV (PCM) — preferred
+- WAV (PCM) (preferred)
 - FLAC
 - AIFF
 
@@ -72,7 +72,8 @@ DATABASE_URL=postgresql+psycopg2://username:password@db-host:5432/dbname
 - The app serves static assets from `static/`. If you see `favicon.ico` 404s this is non-critical.
 
 **If you run into audio errors**
-- Error: "Audio file could not be read as PCM WAV, AIFF/AIFF-C, or Native FLAC" — means the server couldn't read the upload. Install `ffmpeg` and retry, or configure the client to upload WAV/FLAC/AIFF.
-- If conversion fails, check server logs — the code now returns ffmpeg stderr to help debugging.
+- Error: "Audio file could not be read as PCM WAV, AIFF/AIFF-C, or Native FLAC" means the server couldn't read the upload. Install `ffmpeg` and retry, or configure the client to upload WAV/FLAC/AIFF.
+- If conversion fails, check server logs the code now returns ffmpeg stderr to help debugging.
+
 
 
